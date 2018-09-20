@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+// 定义迭代媒体查询函数
+.adapterMixin(@index) when (@index>0) {
+  @media (min-width: extract(@wadapterDeviceList,@index)) {
+    html {
+      font-size: @baseFontSize / @psdWidth * extract(@wadapterDeviceList,@index);
+    }
+  }
+  .adapterMixin(@index - 1);
+}

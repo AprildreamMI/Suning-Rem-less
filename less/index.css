@@ -1,0 +1,272 @@
+@charset "UTF-8";
+/*
+    变量
+    基准值 / 设计稿 * 当前设备宽度
+*/
+@media (min-width: 320px) {
+  html {
+    font-size: 42.66666667px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media (min-width: 384px) {
+  html {
+    font-size: 51.2px;
+  }
+}
+@media (min-width: 400px) {
+  html {
+    font-size: 53.33333333px;
+  }
+}
+@media (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+@media (min-width: 424px) {
+  html {
+    font-size: 56.53333333px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 64px;
+  }
+}
+@media (min-width: 540px) {
+  html {
+    font-size: 72px;
+  }
+}
+@media (min-width: 640px) {
+  html {
+    font-size: 85.33333333px;
+  }
+}
+@media (min-width: 720px) {
+  html {
+    font-size: 96px;
+  }
+}
+@media (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-size: 14px;
+  font-family: "Microsoft YaHei", sans-serif;
+  color: #333;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+input,
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  -webkit-appearance: none;
+}
+.f_left {
+  float: left;
+}
+.f_right {
+  float: right;
+}
+.clearFix::before,
+.clearFix::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+.m_l10 {
+  margin-left: 10px;
+}
+.m_r10 {
+  margin-right: 10px;
+}
+.m_t10 {
+  margin-top: 10px;
+}
+.m_b10 {
+  margin-bottom: 10px;
+}
+/*版心*/
+.sn_container {
+  position: relative;
+  min-width: 320px;
+  max-width: 750px;
+  width: 100%;
+  margin: 0  auto;
+  padding-top: 0.9rem;
+  padding-bottom: 1rem;
+}
+/*模块*/
+.topBar {
+  width: 100%;
+  position: fixed;
+  background-color: #fabc09;
+  top: 0;
+  left: 0;
+  height: 0.9rem;
+  z-index: 9999;
+}
+.topBar a {
+  position: absolute;
+  top: 0;
+  width: 0.9rem;
+  height: 0.9rem;
+}
+.topBar a.icon_category {
+  left: 0;
+  background: url("../image/icon_category.png") no-repeat center / 0.44rem 0.7rem;
+}
+.topBar a.icon_cate {
+  right: 0;
+  background: url("../image/icon_cart.png") no-repeat center / 0.63rem 0.68rem;
+}
+.topBar form {
+  width: 100%;
+  height: 0.9rem;
+  padding: 0 0.9rem;
+  position: relative;
+}
+.topBar form .icon_search {
+  position: absolute;
+  top: 0.3rem;
+  left: 1rem;
+  width: 0.3rem;
+  height: 0.3rem;
+  background: url("../image/icon_search.png") no-repeat center / 0.27rem 0.28rem;
+}
+.topBar form input {
+  width: 100%;
+  height: 0.6rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-top: 0.15rem;
+  border-radius: 0.08rem;
+  font-size: 0.24rem;
+  padding-left: 0.5rem;
+}
+.banner {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.banner ul:first-child {
+  width: 1000%;
+  transform: translateX(-10%);
+}
+.banner ul:first-child li {
+  width: 10%;
+  float: left;
+}
+.banner ul:first-child li a {
+  display: block;
+  width: 100%;
+}
+.banner ul:first-child li a img {
+  display: block;
+  width: 100%;
+}
+.banner ul:last-child {
+  position: absolute;
+  right: 0.6rem;
+  bottom: 0.2rem;
+}
+.banner ul:last-child li {
+  float: left;
+  display: block;
+  width: 0.12rem;
+  height: 0.12rem;
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 0.13rem;
+}
+.banner ul:last-child li.now {
+  background-color: #fabc09;
+}
+.nav {
+  width: 100%;
+  padding: 0.1rem 0;
+}
+.nav ul {
+  width: 100%;
+}
+.nav ul li {
+  float: left;
+  width: 20%;
+}
+.nav ul li a {
+  width: 100%;
+  display: block;
+}
+.nav ul li a img {
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0 auto;
+}
+.nav ul li a p {
+  text-align: center;
+  margin: 0.05rem 0;
+  font-size: 0.2rem;
+}
+.tabls {
+  width: 100%;
+  height: 1rem;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #333333;
+}
+.tabls ul {
+  width: 100%;
+}
+.tabls ul li {
+  width: 20%;
+  float: left;
+  padding-top: 0.15rem;
+}
+.tabls ul li a {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.tabls ul li a span {
+  font-size: 0.4rem;
+}
+.tabls ul li a p {
+  font-size: 0.2rem;
+}
+/*# sourceMappingURL=index.css.map */
